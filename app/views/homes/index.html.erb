@@ -57,7 +57,8 @@
                             </div>
                         </div>
                         <div class="step step-2">
-                            <%= f.email_field :email, :class => 'accountName', :value => 'Enter Email' %>
+                            <p>E-mail:</p>
+                            <%= f.email_field :email, :class => 'accountName' %>
                             <div class="submit-btn" id="sub-2">
                                 <%= image_tag("btn-arrow.svg", :alt => "rss feed") %>
                             </div>
@@ -65,7 +66,9 @@
                         <div class="step step-3">
                             <p>create a password:</p>
                             <%= f.password_field :password, :class => 'accountName' %>
-                            <%= f.submit "Sign up", :class => 'submit-btn' %>
+                            <div class="submit-btn" id="sub-3">
+                                <%= image_tag("btn-arrow.svg", :alt => "rss feed") %>
+                            </div>
                         </div>
                         
                     <% end %>
