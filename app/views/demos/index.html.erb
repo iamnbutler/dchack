@@ -1,0 +1,72 @@
+        <header>
+            <h1>BananaPlate</h1>
+            <ul class="create-template">
+              <li id="create-step-1">
+                <p>Customize width:</p> 
+                <div class="c-t-link" id="step-1-wide"></div>  
+                <div class="c-t-link" id="step-1-narrow"></div>
+                <div class="confirm"></div>
+              </li>
+              <li id="create-step-2">
+                <p>Choose a layout:</p> 
+                <div class="c-t-link" id="step-2-single-col"></div>  
+                <div class="c-t-link" id="step-2-sidebar"></div>
+                <div class="c-t-link" id="step-2-sidebar-2-col"></div>
+                <div class="confirm"></div></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <nav>
+                <% if user_signed_in? %>
+                    <a href="#" class="current-user">Username</a>
+                    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                <% else %>
+                    <%= link_to('Login', new_user_session_path)  %>
+                <% end %>
+            </nav>
+        </header>
+    <section class="body-wrapper">
+        <div class="header">
+          <h2>Blog Title</h2>
+        </div>
+        <div class="body">
+          <div class="sidebar"></div>
+          <div class="main-column"></div>
+          <div class="secondary-column"></div>
+
+          <div id='injection_site'></div>
+
+          <!-- <img id='image1' src='http://images.aviary.com/imagesv5/feather_default.jpg'/> -->
+
+          <!-- Add an edit button, passing the HTML id of the image and the public URL of the image -->
+          <p><input type='image' src='http://images.aviary.com/images/edit-photo.png' value='Edit photo' onclick="return launchEditor('image1', 'http://images.aviary.com/imagesv5/feather_default.jpg');" /></p>
+        
+        </div>
+    </section>
+
+    <script type="text/javascript" src="http://feather.aviary.com/js/feather.js"></script>
+
+          <!-- Instantiate Feather -->
+          <script type='text/javascript'>
+             var featherEditor = new Aviary.Feather({
+                 apiKey: 'U_hd-G8CPkqT2gaFbJQD4A',
+                 apiVersion: 2,
+                 tools: 'effects,orientation,warmth,brightness,saturation,blemish,redeye,whiten,text,sharpness,contrast,crop,resize,enhance',
+                 appendTo: 'injection_site',
+                 onSave: function(imageID, newURL) {
+                     var img = document.getElementById(imageID);
+                     img.src = newURL;
+                 },
+                 onError: function(errorObj) {
+                     alert(errorObj.message);
+                 }
+             });
+             function launchEditor(id, src) {
+                 featherEditor.launch({
+                     image: id,
+                     url: src
+                 });
+                return false;
+             }
+          </script>

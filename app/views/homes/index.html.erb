@@ -1,0 +1,76 @@
+        <header>
+            <div class="wrapper">
+                <h1>BananaPlate</h1>
+                <nav>
+                    <% if user_signed_in? %>
+                        <a href="#" class="current-user">Username</a>
+                        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                    <% else %>
+                        <%= link_to('Login', new_user_session_path)  %>
+                    <% end %>
+                </nav>
+            </div>
+        </header>
+        <!-- / header -->
+
+        <section class="hero">
+            <article>
+                <h2>Get ripe now</h2>
+            </article>
+        </section>
+        <!-- / hero -->
+
+        <section class="slider">
+            <div class="flexslider">
+                
+            <div class="flex-viewport"><ul class="slides" style="width: 1000%; -webkit-transition: 0s; -webkit-transform: translate3d(-1146px, 0, 0);"><li class="clone" style="width: 1146px; float: left; display: block;">
+                        <article>
+                            Hello
+                        </article>
+                    </li>
+                    <li class="flex-active-slide" style="width: 1146px; float: left; display: block;">
+                        <article>
+                            Hello
+                        </article>
+                    </li>
+                    <li style="width: 1146px; float: left; display: block;">
+                        <article>
+                            Hello
+                        </article>
+                    </li>
+        </section>
+        <!-- / slider -->
+
+        <section class="create">
+            <article>
+                <div class="wrapper">
+                    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+                        <%= devise_error_messages! %>
+
+                        <div class="step step-1">
+                            <p>bananaplate.com/</p>
+                            <%= f.text_field :username, :class => 'accountName' %>
+                            <div class="submit-btn" id="sub-1"></div>
+                        </div>
+                        <div class="step step-2">
+                            <%= f.email_field :email, :class => 'accountName', :value => 'Enter Email' %>
+                            <div class="submit-btn" id="sub-2"></div>
+                        </div>
+                        <div class="step step-3">
+                            <p>create a password:</p>
+                            <%= f.password_field :password, :class => 'accountName' %>
+                            <%= f.submit "Sign up", :class => 'submit-btn' %>
+                        </div>
+                        
+                    <% end %>
+                    
+                </div>
+            </article>
+        </section>
+        <!-- / registration -->
+
+        <footer>
+            <article>
+                <p>BananaPlate <span>&mdash;</span> Get ripe. Stay fresh.</p>
+            </article>
+        </footer>

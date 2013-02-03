@@ -1,0 +1,91 @@
+.header {
+	height: 80px;
+	background-color: black;
+	color: white; 
+}
+
+.header a {
+	color: white;
+}
+
+.body-wrapper {
+	background-color: white; 
+	width: 100%;
+	min-height: 100%;
+}
+
+.body {
+	min-height: 100%;
+	width: 1248px;
+	min-height: 300px;
+	margin: 0 auto;
+	background-color: orange; 
+}
+
+.header {
+	padding: 60px 0px;
+	h2 {
+		font-size: 440%;
+		font-weight: 300;
+		text-align: center;
+	}
+}
+
+.sidebar {
+	display: none;
+	background-color: red; 
+	height: 100%;
+	min-height: 200px;
+	float: left;
+}
+
+.secondary-column {
+	display: none;
+	background-color: green; 
+	height: 100%;
+	min-height: 200px;
+	float: left;
+}
+
+.main-column {
+	width: 100%;
+	display: block;
+	background-color: blue; 
+	height: 100%;
+	min-height: 200px;
+	float: left;
+
+}
+
+.create-template {
+	position: absolute;
+	margin-left: 50%;
+	margin-top: 20px;
+	width: 400px;
+	left: -200px;
+	li {
+		display: none;
+	}
+	li:first-child {
+		display: block;
+	}
+	.c-t-link, .confirm {
+		width: 60px;
+		height: 60px;
+		float: left;
+		margin-left: 20px;
+		background-color: orange;
+	}
+	.confirm {
+		background-color: green; 
+	}
+	p {
+		font-size: 200%;
+		color: white;
+		float: left;
+	}
+	#step-1-wide {
+		background-color: blue; 
+	}
+
+}
