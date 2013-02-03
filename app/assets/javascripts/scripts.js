@@ -224,3 +224,5 @@
 	        layout.resize_widget(elmObj, grid_w, grid_h);
 	    }
 	});
+
+// Toolbar 
