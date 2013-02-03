@@ -17,32 +17,35 @@
             <article>
                 <h2>A fresh new way to fashion blog</h2>
                 <p>A publishing platform built for fashion bloggers &amp; designers</p>
-                <a href="#" class="btn">Try the demo</a>
+                <a href="/posts" class="btn">Try the demo</a>
             </article>
         </section>
         <!-- / hero -->
 
         <section class="slider">
             <div class="flexslider">
-                
-            <div class="flex-viewport">
-                <ul class="slides" style="width: 1000%; -webkit-transition: 0s; -webkit-transform: translate3d(-1146px, 0, 0);">
-                    <li class="clone" style="width: 1146px; float: left; display: block;">
-                        <article>
-                            <p>100% tailored to your needs</p>
-                            <%= image_tag("ui.png", :alt => "rss feed") %>
-                        </article>
-                    </li>
-                    <li class="flex-active-slide" style="width: 1146px; float: left; display: block;">
-                        <article>
-                            <p>Designed for your growth</p>
-                        </article>
-                    </li>
-                    <li style="width: 1146px; float: left; display: block;">
-                        <article>
-                            <p>Manage a blog and a store</p>
-                        </article>
-                    </li>
+                <div class="flex-viewport">
+                    <ul class="slides" style="width: 1000%; -webkit-transition: 0s; -webkit-transform: translate3d(-1146px, 0, 0);">
+                        <li class="clone" style="width: 1146px; float: left; display: block;">
+                            <article>
+                                <p>100% tailored to your needs</p>
+                                <%= image_tag("ui.png", :alt => "rss feed") %>
+                            </article>
+                        </li>
+                        <li class="flex-active-slide" style="width: 1146px; float: left; display: block;">
+                            <article>
+                                <p>Designed for your growth</p>
+                                <div class="mask">
+                                    <video autoplay="autoplay" loop="loop">
+                                        <source src="http://dl.dropbox.com/u/40717613/grow.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <!-- / slider -->
 

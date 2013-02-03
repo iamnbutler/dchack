@@ -424,6 +424,17 @@ body p {
 		background: no-repeat;
 	}
 
+	.mask {
+		margin: 90px auto;
+		width: 730px;
+		height: 400px;
+		overflow: hidden;
+	}
+
+	.mask video {
+		margin: -200px -200px;
+	}
+
 /*
 	Footer
 */
