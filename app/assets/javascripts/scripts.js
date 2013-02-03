@@ -226,3 +226,6 @@
 	});
 
 // Toolbar 
+$('#text').click(function(){
+	$('#text-2').fadeIn(400);
+});

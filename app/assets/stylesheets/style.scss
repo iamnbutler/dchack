@@ -132,9 +132,31 @@ body p {
  	.tool {
  		width: 80px;
  		height: 80px;
+ 		-webkit-background-size: 100%; 
+		-o-background-size: 100%; 
+		background-size: 100%; 
+		cursor: pointer;
  	}
  	.tool:hover {
- 		background-color: black; 
+ 		background-color: black;
+ 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+ 		filter: alpha(opacity=60);
+ 		opacity: 0.6; 
+ 	}
+ 	#text {
+ 		background-image: url(text.svg);
+ 	}
+ 	#image {
+ 		background-image: url(photo.svg);
+ 	}
+ 	#audio {
+ 		background-image: url(audio.svg);
+ 	}
+ 	#video {
+ 		background-image: url(video.svg);
+ 	}
+ 	#color {
+ 		background-image: url(colour.svg); 
  	}
  }
 
