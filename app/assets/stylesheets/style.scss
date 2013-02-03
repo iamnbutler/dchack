@@ -95,6 +95,10 @@ body p {
 		text-transform: uppercase;
 	}
 
+	header, section, footer {
+		background:#000;
+	}
+
 	section article {
 		margin: 0 auto;
 		width: 960px;
@@ -104,8 +108,8 @@ body p {
 		letter-spacing: 0.2rem;
 	}
 
-	section article h2 {
-		margin: 100px 0;
+	section.hero article h2 {
+		padding: 100px 0;
 
 		font-size: 5rem;
 		font-weight: 300;
