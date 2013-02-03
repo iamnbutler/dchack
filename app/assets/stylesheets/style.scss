@@ -102,7 +102,7 @@ body p {
 	.edit-btn {
 		position: fixed;
 		right: 40px;
-		top: 50px;
+		top: 30px;
 		line-height: 20px;
 		cursor: pointer;
 	}
@@ -111,9 +111,13 @@ body p {
 		display: none;
 		position: fixed;
 		right: 40px;
-		top: 50px;
+		top: 30px;
 		line-height: 20px;
 		cursor: pointer;
+	}
+
+	.edit-btn:hover, .done-btn:hover {
+		background-color: #ffe11e; 
 	}
 
 	.pull-right {
