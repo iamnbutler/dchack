@@ -136,8 +136,10 @@
 
 		$(fSlider).flexslider({
 			animation : 'slide',
-			slideshow : false
+			slideshow : true
 		});
+
+		$('input').focus();
 	});
 
 	// Home Page Registration

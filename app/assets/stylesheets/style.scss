@@ -64,7 +64,7 @@ body p {
 
 	header {
 		height: 100px;
-		border-bottom: 1px solid #111;
+		border-bottom: 1px solid #191919;
 	}
 
 	header h1 {
@@ -146,19 +146,18 @@ body p {
 		.flex-direction-nav {*height: 0;}
 
 		.flex-direction-nav a {
-			position: fixed;
-			z-index: 3;
+			position: absolute;
 			top: 50%;
-			margin: -160px 0;
+			margin: -25px 0;
 			width: 13px;
 			height: 25px;
 			border: none;
 			display: block;
 			cursor: pointer;
 
-			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-			filter: alpha(opacity=0);
-			opacity: 0;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+			filter: alpha(opacity=30);
+			opacity: 0.3;
 
 			text-indent: -9999px;
 
@@ -171,13 +170,13 @@ body p {
 
 		.flex-direction-nav .flex-next {
 			right: 40px;
-			background: url(../img/nav/arrow-right.svg) no-repeat 0 0;
+			background: url(arrow-right.svg) no-repeat 0 0;
 			background-size: 100%;
 		}
 
 		.flex-direction-nav .flex-prev {
 			left: 40px;
-			background: url(../img/nav/arrow-left.svg) no-repeat 0 0;
+			background: url(arrow-left.svg) no-repeat 0 0;
 			background-size: 100%;
 		}
 
@@ -239,7 +238,7 @@ body p {
 	Create
 */
 	section.create {
-		border-bottom: 1px solid #111;
+		border-bottom: 1px solid #191919;
 	}
 
 	section.create article {
@@ -264,7 +263,7 @@ body p {
 		background: #000;
 		outline: 0;
 		border: none;
-		border-bottom: 1px solid #222;
+		border-bottom: 1px solid #191919;
 		width: 240px;
 		color: #fd0;
 		font-size: 2.5rem;
