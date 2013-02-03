@@ -145,13 +145,15 @@
 
 	// Home Page Registration
 	$('#sub-1').click(function(){
+		$('.step-1').animate({right: '40px', opacity: '0'}, 400);
 		$('.step-1').fadeOut();
-		$('.step-2').delay(400).fadeIn();
+		$('.step-2').delay(800).fadeIn();
 	});
 
 	$('#sub-2').click(function(){
+		$('.step-2').animate({right: '40px', opacity: '0'}, 400);
 		$('.step-2').fadeOut();
-		$('.step-3').delay(400).fadeIn();
+		$('.step-3').delay(800).fadeIn();
 	});
 
 	//demo

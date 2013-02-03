@@ -1,25 +1,47 @@
-<h1>Listing posts</h1>
+    <div class="edit"></div>
+      <header id="blog-header">
+          <input type="text" class="h2" value="VENICE CANALS"></input>
+          <input type="text" class="h3" value="Posted On February 1, 2013 By Olivia"></input>
+          <div class="pull-right">
+            <div class="edit-btn btn" id="edit-btn">Edit</div>
+            <div class="done-btn btn" id="done-btn">Done</div>
+          </div>
+      </header>
+      <section class="body-wrapper">
+          <div class="toolbar toolbar-hide" id="toolbar">
+            <ul>
+              <li class="tool" id="text"></li>
+              <li class="tool" id="color"></li>
+              <li class="tool" id="image"></li>
+              <li class="tool" id="audio"></li>
+              <li class="tool" id="video"></li>
+            </ul>
+          </div>
+          <div class="body">
+              <div class="layouts_grid" id="layouts_grid">
+                <ul>
+                  <li class="layout_block" data-id="3" data-row="1" data-col="1" data-sizex="14" data-sizey="8" style="background-image: url(<%= image_path('ex1.jpg') %>);"></li>
+                   <li class="layout_block" data-id="3" data-row="2" data-col="1" data-sizex="14" data-sizey="8" style="background-image: url(<%= image_path('img_2.jpg') %>);">
+                  </li>
+                  <li class="layout_block" data-id="3" data-row="2" data-col="1" data-sizex="14" data-sizey="8" style="background-image: url(<%= image_path('img_5.jpg') %>);"></li>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Post', new_post_path %>
+                  <li class="layout_block text" data-id="13" data-row="13" data-col="1" data-sizex="8" data-sizey="6">
+                    <p>I took advantage of an unseasonably warm day in <a href="https://en.wikipedia.org/wiki/Venice">Venice</a> to wear out this box tee from one of my favorite New Zealand labels, <a href="http://www.salasai.com/">Salasai</a>. I love shapeless things like this one, even if it tends to be unflattering on my boy like figure. Paired it with my Isabel Rio sandals which have officially become my most versatile purchase up to date, and a glossy red lip to show that I am a girl, after all. On a good day, the Venice Beach canals are a great tourist distraction from the wackiness of the Boardwalk.</p>
+                    <p>My best tip for any visitor spending the day on the West Side is to book a reservation at Gjelina’s, take a stroll through <a href="http://www.abbotkinneyonline.com/">Abbot Kinney</a>, stop by Satine, and locate the second rate version of what was inspired by the original Venice Canals. Once you move past the travel recommendations of tourist traps, you can really appreciate what the locals living in Los Angeles are all about. </p>
+                    <p>
+                      Example photos and blog entry from <a href="http://lusttforlife.com/" title="Lustt For Life">http://lusttforlife.com/</a>.<p>
+                  </li>
+                  <li id="image-2" class="layout_block" data-id="12" data-row="13" data-col="1" data-sizex="4" data-sizey="4" style="background-image: url(<%= image_path('img_4.jpg') %>);">
+                  </li>
+                  <li class="layout_block text" id="text-2" data-id="7" data-row="5" data-col="1" data-sizex="6" data-sizey="4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit modi debitis dolorem repellendus ipsam ratione reprehenderit harum impedit vero praesentium adipisci architecto rem necessitatibus? Voluptas non odio earum eveniet rerum. Est quidem et doloremque a quod unde deserunt omnis culpa. </p>
+                    <p>Consectetur adipisicing elit. Ratione porro fuga officiis architecto doloremque dignissimos odio illum.
+                    <br />
+                    Consectetur adipisicing elit. Ratione porro fuga officiis architecto doloremque dignissimos odio illum.
+                    </p>
+                  </li>
+                </ul>
+                <div class="divider"></div>
+              </div>
+          </div>
+      </section>

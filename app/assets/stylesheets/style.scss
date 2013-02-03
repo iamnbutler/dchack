@@ -170,7 +170,7 @@ body p {
    transition-duration: 0.8s;  
    	width: 80px;
  	height: 400px;
- 	top: 80px;
+ 	top: 100px;
  	left: 0;
  	position: fixed;
  	background-color: #111;
@@ -430,6 +430,7 @@ body p {
 
 .step {
 	display: none;
+	position: relative;
 }
 
 .step-1 {
