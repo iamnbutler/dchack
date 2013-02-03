@@ -13,8 +13,8 @@
 /*
 	Basic settings
 */
-	::-moz-selection {background: #bada55; color: #eee; text-shadow: none;}
-	::selection {background: #bada55; color: #eee; text-shadow: none;}
+	::-moz-selection {background: #fff; color: #000; text-shadow: none;}
+	::selection {background: #fff; color: #000; text-shadow: none;}
 
 	a, a:visited {
 		color: #333;
@@ -140,6 +140,15 @@ body p {
 		color: #fff;
 		font-size: 1.1rem;
 		letter-spacing: 0.2rem;
+	}
+
+	section.hero .btn{
+		padding: 15px 30px;
+		background: #000;
+		border: 2px solid #fff;
+		border-radius: 30px;
+		color: #fff;
+		font-size: 1.5rem;
 	}
 
 	section.hero article h2 {
@@ -334,7 +343,7 @@ body p {
 		}
 
 		.flexslider ul li img {
-			margin: 100px 0 0 -75px;
+			margin: 90px 0 0 -75px;
 			height: 400px;
 		}
 
