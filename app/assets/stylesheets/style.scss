@@ -384,12 +384,13 @@ body p {
 
 	section.create .accountName {
 		float: left;
-		margin: 8px 0 0 5px;
-		padding: 0 0 5px 0;
-		background: #000;
+		margin: 5px 0 0 5px;
+		padding: 3px 6px;
+		background: #111;
 		outline: 0;
 		border: none;
-		border-bottom: 1px solid #191919;
+		border-bottom: 1px solid #222;
+		border-radius: 5px;
 		width: 240px;
 		color: #fd0;
 		font-size: 2.5rem;
@@ -404,9 +405,9 @@ body p {
 		padding: 10px;
 		background: #fd0;
 		border-radius: 5px;
-		width: 14px;
-		height: 14px;
-		margin-top: 7px;
+		width: 15px;
+		height: 15px;
+		margin-top: 5px;
 		margin-left: 10px;
 		border: none;
 		cursor: pointer;
@@ -417,6 +418,10 @@ body p {
 
 	section.create .submit-btn img {
 		margin: 0 0 8px 4px;
+	}
+
+	.layout_block {
+		background: no-repeat;
 	}
 
 /*
