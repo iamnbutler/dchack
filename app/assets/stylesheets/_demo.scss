@@ -3,7 +3,7 @@
 	-webkit-background-size: 100px; 
 	 -o-background-size: 100px; 
 	 background-size: 100px;
-	background-position: center;
+	background-position: top center;
 	background-repeat: repeat; 
 	position: fixed;
 	display: none;
@@ -262,8 +262,6 @@
 }
 
 .layout_block.text {
-	border-radius: 4px;
-	border: 2px #fd0 dashed;
 }
 
 .layout_block input {

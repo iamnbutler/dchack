@@ -231,7 +231,7 @@ $('#edit-btn').click(function(){
 	$(this).fadeOut(800);
 	$('#done-btn').fadeIn(800);
 	$('#toolbar').removeClass('toolbar-hide');
-	$('.layout_block').css({backgroundColor: '#EEE'});
+	$('.layout_block').css({border: '1px #999 solid'});
 });
 
 // Done Button
@@ -240,7 +240,7 @@ $('#done-btn').click(function(){
 	$(this).fadeOut(800);
 	$('#edit-btn').fadeIn(800);
 	$('#toolbar').addClass('toolbar-hide');
-	$('.layout_block').css({backgroundColor: 'transparent'});
+	$('.layout_block').css({border: '0px #999 solid'});
 });
 
 // Toolbar 
