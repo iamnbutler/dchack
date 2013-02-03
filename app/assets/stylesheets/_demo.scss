@@ -254,10 +254,13 @@
     -moz-transition-duration: 0.8s;
     -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
-	padding-bottom: 60px;
+	border-bottom: 1px solid #EFEFEF;
+	margin-bottom: 40px;
 }
 
-.layout_block {
+.layout_block p a {
+	padding-bottom: 2px;
+	border-bottom: 1px #fd0 solid;
 }
 
 .layout_block.text {
@@ -274,7 +277,7 @@
 	background-size: 100% auto; 
 }
 
-#text-2, #image-2 {
+#text-2 {
 	display: none;
 }
 
