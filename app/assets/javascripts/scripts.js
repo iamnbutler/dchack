@@ -136,7 +136,8 @@
 
 		$(fSlider).flexslider({
 			animation : 'slide',
-			slideshow : true
+			slideshow : true,
+			animationSpeed : 1000
 		});
 
 		$('input').focus();
