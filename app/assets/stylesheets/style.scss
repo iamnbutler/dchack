@@ -26,7 +26,11 @@
 /*
 	Layout
 */
-	html {font-size: 10px; min-height: 100%;}
+	html, body {
+		min-height: 100%;
+	}
+
+	html {font-size: 10px}
 
 	body {
 		background: #000;
@@ -39,7 +43,6 @@
 		letter-spacing: normal;
 		line-height: normal;
 		word-spacing: normal;
-		min-height: 100%;
 	}
 
 	.wrapper {
