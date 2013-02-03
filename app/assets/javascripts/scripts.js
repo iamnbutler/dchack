@@ -225,6 +225,24 @@
 	    }
 	});
 
+// Edit Button
+$('#edit-btn').click(function(){
+	$('.edit').fadeIn(800);
+	$(this).fadeOut(800);
+	$('#done-btn').fadeIn(800);
+	$('#toolbar').removeClass('toolbar-hide');
+	$('.layout_block').css({backgroundColor: '#EEE'});
+});
+
+// Done Button
+$('#done-btn').click(function(){
+	$('.edit').fadeOut(800);
+	$(this).fadeOut(800);
+	$('#edit-btn').fadeIn(800);
+	$('#toolbar').addClass('toolbar-hide');
+	$('.layout_block').css({backgroundColor: 'transparent'});
+});
+
 // Toolbar 
 $('#text').click(function(){
 	$('#text-2').fadeIn(400);

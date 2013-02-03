@@ -82,7 +82,7 @@ body p {
 		float: right;
 	}
 
-	header nav a {
+	.btn {
 		padding: 10px 15px;
 		background: #fd0;
 		border-radius: 5px;
@@ -93,6 +93,32 @@ body p {
 		letter-spacing: 0.2rem;
 		line-height: 102px;
 		text-transform: uppercase;
+	}
+
+	.edit-btn {
+		position: fixed;
+		right: 40px;
+		top: 50px;
+		line-height: 20px;
+		cursor: pointer;
+	}
+
+	.done-btn {
+		display: none;
+		position: fixed;
+		right: 40px;
+		top: 50px;
+		line-height: 20px;
+		cursor: pointer;
+	}
+
+	.pull-right {
+		float: right;
+	}
+
+	.body-wrapper, #blog-header {
+		position: relative;
+		z-index: 2;
 	}
 
 	header, section, footer {
@@ -121,12 +147,17 @@ body p {
 */
 
  .toolbar {
- 	width: 80px;
+ 	-webkit-transition-duration: 0.8s;  
+   -moz-transition-duration: 0.8s;  
+   -o-transition-duration: 0.8s;  
+   transition-duration: 0.8s;  
+   	width: 80px;
  	height: 400px;
  	top: 80px;
  	left: 0;
  	position: fixed;
  	background-color: #111;
+ 	z-index: 2;
  	.tool {
  		width: 80px;
  		height: 80px;
@@ -156,6 +187,14 @@ body p {
  	#color {
  		background-image: url(colour.svg); 
  	}
+ }
+
+ .toolbar-hide {
+ 	left: -80px;
+ 	-webkit-transition-duration: 0.8s;  
+   -moz-transition-duration: 0.8s;  
+   -o-transition-duration: 0.8s;  
+   transition-duration: 0.8s;  
  }
 
 
