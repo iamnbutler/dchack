@@ -6,7 +6,7 @@
                         <a href="#" class="current-user">Username</a>
                         <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
                     <% else %>
-                        <%= link_to('Login', new_user_session_path)  %>
+                        <%= link_to('Login', new_user_session_path, :class => "btn")  %>
                     <% end %>
                 </nav>
             </div>
@@ -52,11 +52,13 @@
                         <div class="step step-1">
                             <p>bananaplate.com/</p>
                             <%= f.text_field :username, :class => 'accountName' %>
-                            <div class="submit-btn" id="sub-1"></div>
+                            <div class="submit-btn" id="sub-1">
+                                <%= image_tag("btn-arrow.svg", :alt => "rss feed") %>
+                            </div>
                         </div>
                         <div class="step step-2">
                             <%= f.email_field :email, :class => 'accountName', :value => 'Enter Email' %>
-                            <div class="submit-btn" id="sub-2"></div>
+                            <div class="submit-btn" id="sub-2">Hello</div>
                         </div>
                         <div class="step step-3">
                             <p>create a password:</p>
