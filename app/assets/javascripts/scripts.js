@@ -156,8 +156,8 @@
 	//demo
 
 	var layout;
-	var grid_size = 100;
-	var grid_margin = 20;
+	var grid_size = 50;
+	var grid_margin = 10;
 	var block_params = {
 	    max_width: 1000,
 	    max_height: 1000
@@ -177,8 +177,8 @@
 	                name: $($w).find('.block_name').html(),
 	            };
 	        },
-	        max_size_x: 10,
-	        max_size_y: 10,
+	        max_size_x: 20,
+	        max_size_y: 20,
 	        min_rows: block_params.max_height
 	    }).data('gridster');
 
@@ -231,7 +231,7 @@ $('#edit-btn').click(function(){
 	$(this).fadeOut(800);
 	$('#done-btn').fadeIn(800);
 	$('#toolbar').removeClass('toolbar-hide');
-	$('.layout_block').css({border: '1px #999 solid'});
+	$('.layout_block.text').css({backgroundColor: 'white'});
 });
 
 // Done Button
@@ -240,10 +240,14 @@ $('#done-btn').click(function(){
 	$(this).fadeOut(800);
 	$('#edit-btn').fadeIn(800);
 	$('#toolbar').addClass('toolbar-hide');
-	$('.layout_block').css({border: '0px #999 solid'});
+	$('.layout_block.text').css({backgroundColor: 'transparent'});
 });
 
 // Toolbar 
 $('#text').click(function(){
 	$('#text-2').fadeIn(400);
+});
+
+$('#image').click(function(){
+	$('#image-2').fadeIn(400);
 });
