@@ -259,6 +259,18 @@
 .layout_block p a {
 	padding-bottom: 2px;
 	border-bottom: 1px #fd0 solid;
+	-webkit-transition-duration: 0.8s;  
+   -moz-transition-duration: 0.8s;  
+   -o-transition-duration: 0.8s;  
+   transition-duration: 0.8s;  
+}
+
+.layout_block p a:hover {
+	padding-bottom: 3px;
+	-webkit-transition-duration: 0.8s;  
+   -moz-transition-duration: 0.8s;  
+   -o-transition-duration: 0.8s;  
+   transition-duration: 0.8s;  
 }
 
 .layout_block.text {
